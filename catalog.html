@@ -14,7 +14,7 @@
   <ul>
     <li><a href="#">СТУДИЯ</a></li>
     <li><a href="#">КЛИЕНТЫ</a></li>
-    <li><a href="#">МАГАЗИН</a></li>
+    <li><a>МАГАЗИН</a></li>
     <li><a href="#">КОНТАКТЫ</a></li>  
     <li><a href="#">КОРЗИНА</a></li>
 </ul>
@@ -23,32 +23,31 @@
   <main>
      <!-- Основное содержимое страницы -->
      <h1>Магазин готовых шаблонов</h1>
-     <div>
-         <h3>Стоимость</h3>
-         <form method="get" action="https://echo.htmlacademy.ru">
+     <section>
+      <h3>Сортировать</h3>
+      <ul>
+          <li><a href="#">по цене</a></li>
+              <li><a href="#">по типу</a></li>
+              <li><a href="#">по названию</a></li>
+          </ul>
+       </section>
+     <section>
+      <h2>Фильтр цены</h2>
+      <fieldset>
+        <legend>Стоимость</legend>
+          <form method="get" action="https://echo.htmlacademy.ru">
             <input type="range" name="price"
                    min="0" max="15000">
-          </div>
-          <div>
             <label for="min">от <input name="min-price" id="min" type="text" value="0">
               </label>
-              <label for="max">до <input name="max-price" id="max"type="text" value="15000">
+            <label for="max">до <input name="max-price" id="max"type="text" value="15000">
               </label>
-          </div>
-     </div>
-     <section>
-        <h3>Сортировать</h3>
-        <ul>
-            <li><a href="#">по цене</a></li>
-                <li><a href="#">по типу</a></li>
-                <li><a href="#">по названию</a></li>
-            </ul>
-         </section>
+            </fieldset>
+        </section>
      <section>
         <h2>Фильтр товаров</h2>
-        <form method="get" action="https://echo.htmlacademy.ru">
-             <fieldset>
-              <legend>Cетка:</legend>
+          <fieldset>
+            <legend>Cетка:</legend>
               <ul>
                 <li>
                   <input type="radio" name="grid" value="adaptive" id="filter-adaptive"  checked>
@@ -96,87 +95,65 @@
         <h2>Список шаблонов</h2>
         <ul>
             <li>
-                <p>
-                <img src="https://via.placeholder.com/358x578" alt="Sedona Информационный сайт для туристов">
-              </p>
               <h3><a href="#">Sedona</a></h3>
                 <p>Информационный сайт<br>
                     для туристов</p>
                 <button type="button"> 9 900 ₽ </button>
+                <img src="https://via.placeholder.com/358x578" alt="Sedona Информационный сайт для туристов">
             </li>
           </ul>
           <ul>
             <li>
-                <p><img src="https://via.placeholder.com/358x578" alt="Приложение Pink">
-                </p>
                 <h3><a href="#">Pink App</a></h3>
                 <p>Продуктовый лендинг<br>
                 приложения для iOS и Android</p>
-    
                 <button type="button">9 900 ₽</button>
+                <img src="https://via.placeholder.com/358x578" alt="Приложение Pink">
             </li>
         </ul>
         <ul>
             <li>
-                <p><img src="https://via.placeholder.com/358x578" alt="<Барбершоп>">
-                </p>
                 <h3><a href="#">Barbershop</a></h3>
                 <p>Сайт салона красоты.<br>
                     Для мужчин, да.</p>
-    
                 <button type="button">9 900 ₽</button>
+                <img src="https://via.placeholder.com/358x578" alt="Барбершоп">
             </li>
         </ul>
         <ul>
             <li>
-                <p><img src="https://via.placeholder.com/358x578" alt="<Мишка - магазин вязаных игрушек>">
-                </p>
-                <h3><a href="#">MISHKA</a></h3>
+               <h3><a href="#">MISHKA</a></h3>
                 <p>Интернет-магазин<br>
                     вязаных игрушек</p>
-    
                 <button type="button">9 900 ₽</button>
+                <img src="https://via.placeholder.com/358x578" alt="Мишка - магазин вязаных игрушек">
             </li>
         </ul>
         <ul>
             <li>
-                <p><img src="https://via.placeholder.com/358x578" alt="<Курсы повышения
-                    квалификации A Plus>">
-                </p>
                 <h3><a href="#">A Plus</a></h3>
                 <p>Лендинг курсов повышения
                     квалификации</p>
-    
                 <button type="button">9 900 ₽</button>
+                <img src="https://via.placeholder.com/358x578" alt="Курсы повышения квалификации A Plus">
             </li>
         </ul>
         <ul>
             <li>
-                <p><img src="https://via.placeholder.com/358x578" alt="<Крафтовый квас - КВАСТ>">
-                </p>
                 <h3><a href="#">КВАСТ</a></h3>
                 <p>Промо-сайт производителя
                     крафтового кваса</p>
-    
                 <button type="button">9 900 ₽</button>
+                <img src="https://via.placeholder.com/358x578" alt="Крафтовый квас - КВАСТ">
             </li>
         </ul>
   </section>
-      <ul>
-        <li>
-          <a>1</a>
-        </li>
-        <li>
-          <a>2</a>
-        </li>
-        <li>
-          <a href="#">3</a>
-        </li>
-        <li>
-          <a href="#">следующая</a>
-        </li>
-      </ul>
-
+  <section>
+    <button type="button" disabled>1</button>
+    <button type="button">2</button>
+    <button type="button">3</button>
+    <button type="button">следующая</button>
+      </section>
       <footer">
         <!-- Подвал сайта -->
         <section>
@@ -186,7 +163,8 @@
         ул. Б. Конюшенная, д. 19/8<br>
         тел. <a href="tel:+78122757575">+7 (812) 275-75-75</a></p>
         <button type="button">напишите нам</button>
-      <img src="https://via.placeholder.com/231x190" alt=map-marker">
+      <img src="https://via.placeholder.com/231x190" alt="map-marker">
+      </section>
       <section>
         <h2>Мы в соцсетях</h2>
         <ul>
@@ -203,7 +181,7 @@
       </section>
     <section> 
       <h2>«Давайте дружить, это выгодно!» </h2>
-      </p>Скидка 10% для друзей из социальных сетей.<p>
+      <p>Скидка 10% для друзей из социальных сетей.</p>
     </section>
       </footer>
         </body>
