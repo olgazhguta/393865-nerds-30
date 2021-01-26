@@ -7,10 +7,10 @@
   <body>
 <header>
   <!-- Шапка сайта -->
+  <a href="./index.html">
+    <img src="https://via.placeholder.com/159.87x65.02" alt="Логотип интернет магазина «Nerds»">
+        </a>
   <nav>
-    <a href="./index.html">
-<img src="https://via.placeholder.com/159.87x65.02" alt="Логотип интернет магазина «Nerds»">
-    </a>
   <ul>
     <li><a href="#">СТУДИЯ</a></li>
     <li><a href="#">КЛИЕНТЫ</a></li>
@@ -23,19 +23,11 @@
   <main>
      <!-- Основное содержимое страницы -->
      <h1>Магазин готовых шаблонов</h1>
-     <section>
-      <h3>Сортировать</h3>
-      <ul>
-          <li><a href="#">по цене</a></li>
-              <li><a href="#">по типу</a></li>
-              <li><a href="#">по названию</a></li>
-          </ul>
-       </section>
-     <section>
-      <h2>Фильтр цены</h2>
+    <section>
+      <h2>Фильтр товаров</h2>
+      <form method="get" action="https://echo.htmlacademy.ru"></form>
       <fieldset>
-        <legend>Стоимость</legend>
-          <form method="get" action="https://echo.htmlacademy.ru">
+        <legend>Стоимость:</legend>
             <input type="range" name="price"
                    min="0" max="15000">
             <label for="min">от <input name="min-price" id="min" type="text" value="0">
@@ -43,9 +35,7 @@
             <label for="max">до <input name="max-price" id="max"type="text" value="15000">
               </label>
             </fieldset>
-        </section>
-     <section>
-        <h2>Фильтр товаров</h2>
+
           <fieldset>
             <legend>Cетка:</legend>
               <ul>
@@ -63,6 +53,7 @@
                 </li>
               </ul>
             </fieldset>
+
             <fieldset>
               <legend>Особенности</legend>
               <ul>
@@ -86,23 +77,44 @@
                     <input type="checkbox" name="basket" id="filter-basket" checked>
                     <label for="filter-basket">Корзина</label>
                   </li>
-              <ul>
+                </ul>
             </fieldset>
             <button type="submit">Показать</button>
           </form> 
     </section>
+
     <section>
-        <h2>Список шаблонов</h2>
+      <h2>Список шаблонов</h2>
+        <div>
+         <form method="get" action="https://echo.htmlacademy.ru"></form>
+          <fieldset>
+            <legend>Сортировать:</legend>
+             <label for="filter-price">по цене</label>
+             <input type="radio" name="product-group" value="price" id="filter-price" checked>
+             <label for="filter-type">по типу</label>
+             <input type="radio" name="product-group" value="type" id="filter-type">
+             <label for="filter-name">по названию</label>
+             <input type="radio" name="product-group" value="name" id="filter-name">
+         </fieldset>
+
+         <fieldset>
+          <label for="to-min-price">по убыванию</label>
+          <input type="radio" name="product-sort" value="min-p" id="to-min-price"checked>
+          
+          <label for="to-max-price">по возрастанию</label>
+          <input type="radio" name="product-sort" value="max-p" id="to-max-price">
+         </fieldset>
+        </form> 
+      </div>
+      
         <ul>
-            <li>
-              <h3><a href="#">Sedona</a></h3>
+          <li>
+            <h3><a href="#">Sedona</a></h3>
                 <p>Информационный сайт<br>
                     для туристов</p>
                 <button type="button"> 9 900 ₽ </button>
                 <img src="https://via.placeholder.com/358x578" alt="Sedona Информационный сайт для туристов">
             </li>
-          </ul>
-          <ul>
             <li>
                 <h3><a href="#">Pink App</a></h3>
                 <p>Продуктовый лендинг<br>
@@ -110,8 +122,6 @@
                 <button type="button">9 900 ₽</button>
                 <img src="https://via.placeholder.com/358x578" alt="Приложение Pink">
             </li>
-        </ul>
-        <ul>
             <li>
                 <h3><a href="#">Barbershop</a></h3>
                 <p>Сайт салона красоты.<br>
@@ -119,8 +129,6 @@
                 <button type="button">9 900 ₽</button>
                 <img src="https://via.placeholder.com/358x578" alt="Барбершоп">
             </li>
-        </ul>
-        <ul>
             <li>
                <h3><a href="#">MISHKA</a></h3>
                 <p>Интернет-магазин<br>
@@ -128,8 +136,6 @@
                 <button type="button">9 900 ₽</button>
                 <img src="https://via.placeholder.com/358x578" alt="Мишка - магазин вязаных игрушек">
             </li>
-        </ul>
-        <ul>
             <li>
                 <h3><a href="#">A Plus</a></h3>
                 <p>Лендинг курсов повышения
@@ -137,8 +143,6 @@
                 <button type="button">9 900 ₽</button>
                 <img src="https://via.placeholder.com/358x578" alt="Курсы повышения квалификации A Plus">
             </li>
-        </ul>
-        <ul>
             <li>
                 <h3><a href="#">КВАСТ</a></h3>
                 <p>Промо-сайт производителя
@@ -146,15 +150,15 @@
                 <button type="button">9 900 ₽</button>
                 <img src="https://via.placeholder.com/358x578" alt="Крафтовый квас - КВАСТ">
             </li>
+        <ul>
+          <li><button type="button" disabled>1</button></li>
+          <li><button type="button">2</button></li>
+          <li><button type="button">3</button></li>
+          <li><button type="button">следующая</button></li>
         </ul>
-  </section>
-  <section>
-    <button type="button" disabled>1</button>
-    <button type="button">2</button>
-    <button type="button">3</button>
-    <button type="button">следующая</button>
       </section>
-      <footer">
+
+      <footer>
         <!-- Подвал сайта -->
         <section>
          <h2>Контакты</h2>
@@ -179,6 +183,7 @@
           </li>
         </ul>
       </section>
+
     <section> 
       <h2>«Давайте дружить, это выгодно!» </h2>
       <p>Скидка 10% для друзей из социальных сетей.</p>
