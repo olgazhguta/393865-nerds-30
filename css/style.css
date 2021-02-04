@@ -7,10 +7,11 @@
     --basic-gray: #666666;
     --basic-light-gray: #E1E1E1;
     --basic-light:#888888;
+    --light-black: #4D4D4D;
     --basic-extra-light: #EEEEEE;
     --basic-white: #ffffff;
     --basic-white-03: rgba(255, 255, 255, 0.3)
-    --gray:#B4B9BB;
+    --gray: #B4B9BB;
     --white-gray:#D7DCDE;
     --red-light: #FB565A;
     --red: #E74246;
@@ -38,7 +39,6 @@ background-color: var(--basic-white);
 display: none; 
 }
 
-
 a {
     text-decoration: none;
   }
@@ -48,12 +48,10 @@ a {
     height: auto;
   }
 
-
   .main-header-logo:hover {
   background-color: var(--basic-extra-light);
   opacity: 0.7;
 }
-
 
   .main-header-logo:focus {
     background-color: var(--basic-extra-light);
@@ -63,6 +61,7 @@ a {
   .main-header {
     background-color: var(--basic-extra-light);
   }
+
   .main-navigation {
     font-size: 16px;
     line-height: 30px;
@@ -84,8 +83,8 @@ a {
 
 /* User navigation */
 
-
 .site-navigation a {
+  font-family: inherit;
   color: var(--basic-black);
 }
 
@@ -94,17 +93,19 @@ a {
   color: var(--red-light);
 
 }
+
 .site-navigation a:focus {
   background-color: var(--basic-extra-light);
   color: var(--basic-black);
   mix-blend-mode: normal;
-  opacity: 0.3;
+  color: var(--basic-white-03);
 }
 
 /* Features */
 .features {
   background-color: var(--basic-extra-light);
 }
+
 .features-list {
   list-style: none;
 }
@@ -119,9 +120,26 @@ a {
   line-height: 55px;
 }
 
+.slider-button {
+  width: 23px;
+  height: 23px;
+  background-color: Transparent;
+  border: 1px solid var(--light-black);
+  opacity: 0.4;
+}
+
+.slider-button:hover {
+  border: 1px solid var(--light-black);
+  opacity: 1;
+}
+
+.slider-button:focus {
+  border: 1px solid var(--light-black);
+  opacity: 0.1;
+}
+
 /* Index columns */
 /* about */
-
 
 .index-columns {
   color: var(--basic-dark);
@@ -155,6 +173,7 @@ a {
   font-weight: 700;
   color: var(--basic-black);
 }
+
  .accuracy-title {
   color: var(--basic-black);
   font-size: 16px;
@@ -163,6 +182,7 @@ a {
   font-weight: 700;
   text-align:left;
  }
+
 .sign {
   font-size: 26px;
   line-height: 40px;
@@ -174,6 +194,7 @@ a {
 font-size: 16px;
 line-height: 18px;
 }
+
 .percents-list {
   list-style: none;
 }
@@ -181,7 +202,7 @@ line-height: 18px;
 /* Button */
 
 .button {
-  font: inherit;
+  font-family: inherit;
   text-align: center;
   font-size: 16px;
   line-height: 18px;
@@ -192,8 +213,8 @@ line-height: 18px;
   border-radius: 3px;
 }
 
-
 .features-button {
+  font-family: inherit;
   background-color: var(--red-light);
   width: 240px;
   height: 50px;
@@ -214,10 +235,12 @@ line-height: 18px;
   }
 
   .contacts-button {
+    font-family: inherit;
     background-color: var(--red-light);
     width: 219px;
     height: 50px;
   }
+
   .contacts-button:hover {
     background-color: var(--red);
     width: 219px;
@@ -232,64 +255,74 @@ line-height: 18px;
   }
 
   .services-button-red {
+    font-family: inherit;
     background-color: var(--red-light);
     width: 160px;
     height: 50px;
   }
+
   .services-button-red:hover {
     background-color: var(--red);
     width: 160px;
     height: 50px;
   }
+
   .services-button-red:focus {
     background-color: var(--red-dark);
     width: 160px;
     height: 50px;
-    opacity: 0.3;
+    color: var(--basic-white-03);
     box-shadow: inset 0px 3px 0px var(--shadow-1);
   }
   
   .services-button-green {
+    font-family: inherit;
     background-color: var(--green-light);
     width: 160px;
     height: 50px;
   }
+
   .services-button-green:hover {
     background-color: var(--green-med);
     width: 160px;
     height: 50px;
   }
+
   .services-button-green:focus {
     background-color: var(--green-dark);
     width: 160px;
     height: 50px;
-    opacity: 0.3;
+    color: var(--basic-white-03);
     box-shadow: inset 0px 3px 0px var(--shadow-1);
   }
 
-
   .services-button-yellow {
+    font-family: inherit;
     background-color: var(--yellow-light);
     width: 160px;
     height: 50px;
   }
+
   .services-button-yellow:hover {
     background-color: var(--yellow-med);
     width: 160px;
     height: 50px;
   }
+
   .services-button-yellow:focus {
     background-color: var(--yellow-dark);
     width: 160px;
     height: 50px;
-    opacity: 0.3;
+    color: var(--basic-white-03);
     box-shadow: inset 0px 3px 0px var(--shadow-1);
   }
+
   /* services */
 
   .services-list {
     list-style: none;
   }
+
   .services-title {
   font-size: 24px;
   line-height: 30px;
@@ -306,8 +339,8 @@ line-height: 18px;
     height: 2px;
    }
 
-
   /* clients */
+
     .clients {
       background-color: var(--basic-white);  
     }
@@ -317,6 +350,7 @@ line-height: 18px;
   }
  
   .clients-button {
+    font-family: inherit;
     background-color: var(--basic-white);
     opacity: 0.2;
   }
@@ -331,11 +365,6 @@ line-height: 18px;
     opacity: 0.1;
     }
 
-
-
-
-
-
 /* Contacts */
 
 .contacts p {
@@ -344,14 +373,14 @@ line-height: 18px;
   font-weight: 400;
   color: var(--basic-gray);
 }
-.h3 {
+
+.footer-title {
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
   font-weight: 700;
   color: var(--basic-black);
   }
-
 
 .contacts-phone {
   font-size: 16px;
@@ -368,12 +397,12 @@ line-height: 18px;
   font-weight: 700;
   color: var(--basic-black);  
 }
+
 .discount {
   font-size: 16px;
   line-height: 22px;
   color: var(--basic-dark-gray);  
 }
-
 
 /* Appointment */
 
@@ -384,14 +413,12 @@ line-height: 18px;
   color: var(--basic-black); 
 }
 
-
 .letter-form label {
   font-size: 16px;
   line-height: 18px;
   font-weight: 700;
   color: var(--basic-black); 
 }
-
 
 .letter-form input,textarea {
   background-color: transparent;
@@ -414,8 +441,8 @@ line-height: 18px;
   border: 2px;
 }
 
-
 .modal-close {
+  font-family: inherit;
   color: var(--red-light);
   opacity: 0.3;
   background-color: var(--basic-white);
@@ -434,38 +461,29 @@ line-height: 18px;
 }
 
 .send {
+  font-family: inherit;
   background-color: var(--red-light);
   width: 259px;
   height: 50px;
-  
 }
 
 .send:hover {
-    background-color: var(--red);
-    width: 259px;
-    height: 50px;
-  }
+  background-color: var(--red);
+  width: 259px;
+  height: 50px;
+}
 
-  .send:focus {
-    background-color: var(--red-dark);
-    width: 259px;
-    height: 50px;
-    opacity: 0.3;
-  }
+.send:focus {
+  background-color: var(--red-dark);
+  width: 259px;
+  height: 50px;
+  color: var(--basic-white-03);
+}
 
-
-  /* footer-social */
-  .social-list {
-    list-style: none;
-  }
-  
-  .social-button {
-
-  }
-
-
-
-
+/* footer-social */
+.social-list {
+  list-style: none;
+}
 
 .circle {
   border-radius: 50%;
