@@ -11,7 +11,7 @@
   --basic-light-gray: #E1E1E1;
   --basic-light: #888888;
   --light-black: #4D4D4D;
-  --soft-gray:#D5D5D5;
+  --soft-gray: #D5D5D5;
   --med-light-gray: #DFDFDF;
   --basic-extra-light: #EEEEEE;
   --basic-white: #ffffff;
@@ -473,6 +473,7 @@ img {
   font-weight: 500;
   color: var(--basic-black);
   margin: 0;
+  background-color: var(--basic-extra-light);
 }
 
 .filter-title {
@@ -487,7 +488,7 @@ img {
 .filter-name {
   font-size: 16px;
   line-height: 20px;
-  margin: 0; 
+  margin: 0;
 }
 
 .filter-show-button {
@@ -507,18 +508,18 @@ img {
   box-shadow: inset 0 3px 0 var(--shadow-1);
 }
 
-.filter-type {
+.sort-type {
   font-size: 14px;
   line-height: 18px;
   color: var(--basic-black-03);
 }
 
 
-.filter-type:hover {
+.sort-type:hover {
   color: var(--basic-black-06);
 }
 
-.filter-type:active {
+.sort-type:active {
   font-size: 14px;
   line-height: 18px;
   color: var(--basic-black);
@@ -561,7 +562,7 @@ img {
   list-style: none;
 }
 
-.pagination-button {
+.pagination-link {
   color: var(--basic-black);
   background-color: var(--basic-extra-light);
   border: none;
@@ -569,24 +570,53 @@ img {
   padding: 13px 15px;
 }
 
-.pagination-button:hover {
+.pagination-link:hover {
   background-color: var(--med-light-gray);
 }
 
-.pagination-button:active {
+.pagination-link:active {
   color: var(--basic-black-03);
   background-color: var(--soft-gray);
   box-shadow: inset 0 3px 0 var(--shadow-1);
 }
 
-.pagination-button:disabled {
+.pagination-link:disabled {
   color: var(--basic-black);
   background-color: var(--basic-white);
   border: 3px solid var(--extra-light-gray);
 }
 
-.button-next {
+.link-next {
   width: 260px;
+}
+
+.checkbox-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.radio-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sort-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.example-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.example-link {
+  margin: 0;
+  padding: 0;
 }
 
 .select-button {
@@ -600,13 +630,13 @@ img {
   box-shadow: Offset 0 2px var(--basic-black-015);
 }
 
-.filter-price-text {
-font-size: 16px;
-line-height: 22px;
-text-transform: uppercase;
+.filter-form-text {
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
 }
 
-.filter-price input {
+.filter-form input {
   background-color: var(--basic-extra-light);
   border: none;
   border-radius: 3px;
