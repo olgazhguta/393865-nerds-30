@@ -37,7 +37,7 @@
 
 /* Global */
 .page-body {
-  min-width: 1440px;
+  min-width: 1160px;
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -97,13 +97,19 @@ img {
 }
 
 .main-navigation-wrapper {
-  width: 1440px;
+  width: 1160px;
   margin: 0 auto;
   padding: 0 10px;
+  display: grid;
+  grid-template-columns: min-content 1fx;
+}
+
+.main-header-bar {
+  background-color: var(--basic-extra-light);
 }
 
 .container {
-  width: 1440px;
+  width: 1160px;
   margin: 0 auto;
   padding: 0 10px;
 }
@@ -112,8 +118,6 @@ img {
   margin: 0;
   padding: 0;
   list-style: none;
-  display: grid;
-  grid-template-columns: auto;
 }
 
 .navigation-item {
@@ -204,21 +208,24 @@ img {
   font-weight: 500;
   color: var(--basic-black);
   text-align: left;
-  margin: 0;
+  margin-bottom: 34px;
 }
 
 .about-text {
-  margin: 0;
+  margin-bottom: 38px;
+}
+
+
+.about-item {
+  margin-bottom: 46px;
 }
 
 .about-info {
   margin-bottom: 73px;
+  margin-top: 73px;
+  width: 651px;
 }
 
-.stats {
-  margin-bottom: 74px;
-  margin-top: 39px;
-}
 
 .about-title {
   font-size: 16px;
@@ -226,16 +233,26 @@ img {
   text-transform: uppercase;
   font-weight: 700;
   text-align: left;
-  margin: 0;
+  margin-bottom: 23px;
 }
 
-/* percents */
+/* stats */
 
 .stats-value {
   font-size: 45px;
   line-height: 64px;
   font-weight: 700;
   color: var(--basic-black);
+  margin-top: 31px;
+}
+
+.stats {
+  margin-bottom: 74px;
+  margin-top: 39px;
+}
+
+.stats-img {
+  margin-bottom: 37px;
 }
 
 .accuracy-title {
@@ -245,7 +262,7 @@ img {
   text-transform: uppercase;
   font-weight: 700;
   text-align: left;
-  margin: 0;
+  margin-top: 37px;
 }
 
 .sign {
@@ -263,8 +280,9 @@ img {
 
 .stats-list {
   list-style: none;
-  margin: 0;
   padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 /* Button */
@@ -362,12 +380,14 @@ img {
   list-style: none;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-width: 298px;
 }
 
 .clients-link {
   font-family: inherit;
   background-color: var(--basic-white);
   opacity: 0.2;
+  justify-self: center;
 }
 
 .clients-link:hover {
@@ -381,6 +401,10 @@ img {
 }
 
 /* Contacts */
+
+.contacts {
+  margin-top: 80px;
+}
 
 .contacts-text {
   font-size: 16px;
@@ -413,11 +437,13 @@ img {
   line-height: 36px;
   font-weight: 700;
   color: var(--basic-black);
-  margin: 0;
+  margin-top: 75px;
+  width: 660px;
 }
 
 .discount-text {
-  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 74px;
 }
 
 .discount {
@@ -526,7 +552,8 @@ img {
   width: 81px;
   height: 81px;
   display: inline-block;
-  margin: 0;
+  margin-top: 68px;
+  margin-bottom: 68px;
 }
 
 .main-title {
