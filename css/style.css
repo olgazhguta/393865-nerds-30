@@ -71,6 +71,7 @@ img {
 
 .main-header-logo {
   justify-self: left;
+  order: 0;
 }
 
 .main-header-logo:hover,
@@ -561,7 +562,9 @@ img {
   line-height: 55px;
   font-weight: 500;
   color: var(--basic-black);
-  margin: 0;
+  margin-top: 87px;
+  margin-bottom: 108px;
+  justify-self: center;
   background-color: var(--basic-extra-light);
 }
 
@@ -731,4 +734,12 @@ img {
   background-color: var(--basic-extra-light);
   border: none;
   border-radius: 3px;
+}
+
+/* Grid for pages */
+
+.page-catalog {
+  display: grid;
+  grid-template-columns: 360px 360px 360px;
+  column-gap: 40px;
 }
