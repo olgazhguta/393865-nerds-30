@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Ольга Михайлова](https://up.htmlacademy.ru/htmlcss/30/user/393865).
-* Наставник: [Елена Асташина](https://htmlacademy.ru/profile/helen_astashina).
+* Наставник: [Алексей Хабиров](https://htmlacademy.ru/profile/alex_khab).
 
 ---
 
