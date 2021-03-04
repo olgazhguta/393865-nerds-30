@@ -12,6 +12,7 @@
   --basic-light: #888888;
   --light-black: #4D4D4D;
   --soft-gray: #D5D5D5;
+  --border-gray: #C1C1C1;
   --med-light-gray: #DFDFDF;
   --basic-extra-light: #EEEEEE;
   --basic-white: #ffffff;
@@ -68,6 +69,7 @@
 
 .main-header-container {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 
@@ -116,6 +118,7 @@ img {
   padding: 0;
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 
@@ -126,6 +129,19 @@ img {
 .site-navigation-item:last-child {
   margin-right: 0;
   margin-left: auto;
+  position: relative;
+}
+
+.basket-link::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: -26px;
+  width: 15px;
+  height: 15px;
+  background-image: url("../img/cart-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .site-navigation a {
@@ -144,9 +160,22 @@ img {
 
 /* Features */
 .features {
+  position: relative;
   background-color: var(--basic-extra-light);
   padding-top: 78px;
   padding-bottom: 80px;
+}
+
+.site-wrapper-1 {
+  background-image: url("../img/nerds-index-slide1");
+}
+
+.site-wrapper-2 {
+  background-image: url("../img/nerds-index-slide2");
+}
+
+.site-wrapper-3 {
+  background-image: url("../img/nerds-index-slide3");
 }
 
 .features-list {
@@ -156,12 +185,15 @@ img {
 }
 
 .feature-item {
-  display: none;
   text-align: left;
   margin: 0;
 }
 
-.feature-item-current {
+.slide {
+  display: none;
+}
+
+.slide-current {
   display: block;
 }
 
@@ -180,23 +212,31 @@ img {
   width: 416px;
 }
 
+.slider-controls {
+  position: absolute;
+  bottom: 96px;
+  display: flex;
+  width: 88px;
+  justify-content: space-between;
+}
+
 .slider-button {
-  width: 23px;
-  background-color: Transparent;
-  border: 1px solid var(--light-black);
-  opacity: 0.4;
-  display: none;
+  padding: 0;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: var(--basic-white);
+  border: none;
 }
 
-.slider-button:hover {
-  border: 1px solid var(--light-black);
-  opacity: 1;
+.current {
+  padding: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 2px solid var(--border-gray);
 }
 
-.slider-button:active {
-  border: 1px solid var(--light-black);
-  opacity: 0.1;
-}
 
 /* Index columns */
 /* about */
@@ -406,6 +446,11 @@ img {
 
 .clients {
   margin-bottom: 80px;
+  background-image:
+    url("../img/line.png"),
+    url("../img/line.png");
+  background-position: top, bottom;
+  background-repeat: no-repeat;
 }
 
 .clients-list {
@@ -479,31 +524,50 @@ img {
   line-height: 18px;
   color: var(--basic-gray);
 }
+
 /* footer-social */
 
 .footer-info {
   display: flex;
+  flex-wrap: wrap;
   padding-bottom: 68px;
   padding-top: 68px;
 }
 
 .social-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 261px;
   list-style: none;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
-  justify-content: flex-start;
 }
 
 .social-item {
-  border-radius: 50%;
-  background: var(--basic-light-gray);
-  width: 81px;
-  height: 81px;
   display: inline-block;
 }
 
 .social-item:last-child {
   margin-right: 139px;
+}
+
+.social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--basic-light-gray);
+  width: 81px;
+  height: 81px;
+}
+
+.social-button:hover {
+  color: var(--red);
+}
+
+.social-button:active {
+  color: var(--red-dark);
 }
 
 /* discount */
@@ -524,6 +588,7 @@ img {
   font-weight: 700;
   color: var(--basic-black);
   margin: 0;
+  margin-bottom: 10px;
 }
 
 /* Appointment */
@@ -664,12 +729,14 @@ img {
 
 .sort {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   padding-bottom: 48px;
 }
 
 .sort-buttons {
   display: flex;
+  flex-wrap: wrap;
   gap: 18px;
   margin: 0;
   padding: 0;
@@ -686,6 +753,7 @@ img {
   margin-left: auto;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: flex-end;
 }
@@ -722,8 +790,7 @@ img {
   grid-column-gap: 42px;
 }
 
-.example-item {
-}
+.example-item {}
 
 .example-title {
   margin: 0;
@@ -746,7 +813,8 @@ img {
 }
 
 .example-img {
-display: flex;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .example-link a {
@@ -770,6 +838,7 @@ display: flex;
 .pagination-list {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   margin: 0;
   padding: 0;
@@ -847,6 +916,7 @@ display: flex;
 
 .page-catalog {
   display: flex;
+  flex-wrap: wrap;
   padding-top: 55px;
   padding-bottom: 60px;
 }
