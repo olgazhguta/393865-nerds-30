@@ -3,6 +3,7 @@
 :root {
   --basic-black: #000000;
   --basic-dark: #283136;
+  --extra-black: #231F20;
   --basic-black-03: rgba(0, 0, 0, 0.3);
   --basic-black-06: rgba(0, 0, 0, 0.6);
   --basic-black-015: rgba(0, 0, 0, 0.15);
@@ -12,10 +13,12 @@
   --basic-light: #888888;
   --light-black: #4D4D4D;
   --light-black-04: rgba(77, 77, 77, 0.4);
+  --light-black-03: rgba(77, 77, 77, 0.3);
   --soft-gray: #D5D5D5;
   --border-gray: #C1C1C1;
   --med-light-gray: #DFDFDF;
   --basic-extra-light: #EEEEEE;
+  --extra-gray: #A6A6A6;
   --basic-white: #ffffff;
   --basic-white-03: rgba(255, 255, 255, 0.3);
   --gray: #B4B9BB;
@@ -136,7 +139,7 @@ img {
 .basket-link::before {
   content: "";
   position: absolute;
-  top: 6px;
+  top: 8px;
   left: -40px;
   width: 15px;
   height: 15px;
@@ -858,18 +861,58 @@ img {
   top: 0;
   width: 23px;
   height: 23px;
-  border: 2px solid var(--light-black-04);
-  border-radius: 3px;
+  background-image: url("../img/checkbox-off-black.svg");
+  opacity: 0.3;
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .filter-input-checkbox:checked + label::after {
   content: "";
   position: absolute;
-  top: 2px;
-  left: -43px;
-  width: 19px;
-  height: 19px;
-  background-image: url("../img/shape.png");
+  top: 0px;
+  left: -46px;
+  width: 25px;
+  height: 23px;
+  background-image: url("../img/checkbox-on-black.svg");
+  opacity: 0.3;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-input-checkbox:hover + label::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: -46px;
+  width: 25px;
+  height: 23px;
+  background-image: url("../img/checkbox-off-black.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-input-checkbox:hover + label::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: -46px;
+  width: 25px;
+  height: 23px;
+  background-image: url("../img/checkbox-on-black.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-input-checkbox:active + label::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: -46px;
+  width: 25px;
+  height: 23px;
+  background-image: url("../img/checkbox-on-black.svg");
+  opacity: 0.1;
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -881,19 +924,48 @@ img {
   top: -1px;
   width: 25px;
   height: 25px;
-  border: 2px solid var(--light-black-04);
-  border-radius: 50%;
+  background-image: url("../img/radio-off-black.svg");
+  opacity: 0.3;
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .filter-input-radio:checked + label::after {
   content: "";
   position: absolute;
-  top: 7px;
-  left: -34px;
-  width: 9px;
-  height: 9px;
-  background-color: var(--light-black-04);
-  border-radius: 50%;
+  left: -42px;
+  top: -1px;
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/radio-on-black.svg");
+  opacity: 0.3;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-input-radio:hover + label::after {
+  content: "";
+  position: absolute;
+  left: -42px;
+  top: -1px;
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/radio-on-black.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-input-radio:active + label::after {
+  content: "";
+  position: absolute;
+  left: -42px;
+  top: -1px;
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/radio-on-black.svg");
+  opacity: 0.1;
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .filter-excellence {
@@ -931,14 +1003,30 @@ img {
   padding-bottom: 48px;
 }
 
-.sort-buttons {
+.sort-min-max {
+  list-style: none;
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-wrap: wrap;
   gap: 18px;
-  margin: 0;
-  padding: 0;
-
 }
+
+.sort-button:hover path {
+  fill: var(--extra-gray);
+  opacity: 1;
+}
+
+.sort-button:active path {
+  fill: var(--extra-black);
+  opacity: 1;
+}
+
+.sort-button:focus path {
+  fill: var(--extra-black);
+  opacity: 1;
+}
+
 
 .sort-title {
   margin: 0;
@@ -985,6 +1073,36 @@ img {
   padding-bottom: 55px;
   grid-row-gap: 30px;
   grid-column-gap: 42px;
+}
+
+.example-item {
+  position: relative;
+}
+
+.example-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  margin-bottom: 40px;
+  width: 360px;
+  height: 40px;
+  background-image: url("../img/browser.svg");
+  opacity: 0.12;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.example-item:hover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  margin-bottom: 40px;
+  bottom: -40px;
+  width: 360px;
+  height: 40px;
+  background-image: url("../img/browser.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .example-title {
