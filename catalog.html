@@ -152,8 +152,8 @@
 
       <div class="example">
         <ul class="example-list">
-          <li class="example-item">
-            <div class="example-cover">
+          <li tabindex="0" class="example-item">
+            <div tabindex="0" class="example-cover">
               <h3 class="example-title"><a href="#">Sedona</a></h3>
               <p class="example-text">Информационный сайт<br>
                 для туристов</p>
@@ -162,8 +162,8 @@
             </div>
             <img class="example-img" src="img/img-sedona.jpg" width="358" height="578" alt="Пример сайта Sedona">
           </li>
-          <li class="example-item">
-            <div class="example-cover">
+          <li tabindex="0" class="example-item">
+            <div tabindex="0" class="example-cover">
               <h3 class="example-title"><a href="#">Pink app</a></h3>
               <p class="example-text">Продуктовый лендинг<br>
                 приложения для iOS и Android.</p>
@@ -172,8 +172,8 @@
             </div>
             <img class="example-img" src="img/img-pink.jpg" width="358" height="578" alt="Пример приложения Pink">
           </li>
-          <li class="example-item">
-            <div class="example-cover">
+          <li tabindex="0" class="example-item">
+            <div tabindex="0" class="example-cover">
               <h3 class="example-title"><a href="#">Barbershop</a></h3>
               <p class="example-text">Сайт салона красоты.<br>
                 Для мужчин, да.</p>
@@ -183,8 +183,8 @@
             <img class="example-img" src="img/img-barbershop.jpg" width="358" height="578"
               alt="Пример сайта для барбершопа">
           </li>
-          <li class="example-item">
-            <div class="example-cover">
+          <li tabindex="0" class="example-item">
+            <div tabindex="0" class="example-cover">
               <h3 class="example-title"><a href="#"> Mishka</a></h3>
               <p class="example-text">Интернет-магазин<br>
                 вязаных игрушек</p>
@@ -194,8 +194,8 @@
             <img class="example-img" src="img/img-mishka.png" width="358" height="578"
               alt="Пример интернет-магазина для магазина Мишка">
           </li>
-          <li class="example-item">
-            <div class="example-cover">
+          <li tabindex="0" class="example-item">
+            <div tabindex="0" class="example-cover">
               <h3 class="example-title"><a href="#">A plus</a></h3>
               <p class="example-text">Лендинг курсов повышения<br>
                 квалификации</p>
@@ -205,8 +205,8 @@
             <img class="example-img" src="img/img-aplus.jpg" width="358" height="578"
               alt="Пример лендинга курсов повышения квалификации A Plus">
           </li>
-          <li class="example-item">
-            <div class="example-cover">
+          <li tabindex="0" class="example-item">
+            <div tabindex="0" class="example-cover">
               <h3 class="example-title"><a href="#">Кваст</a></h3>
               <p class="example-text">Промо-сайт производителя<br>
                 крафтового кваса</p>
@@ -284,18 +284,22 @@
 
   <section class="modal">
     <h2 class="modal-description">Напишите нам</h2>
-    <button class="button modal-close">
+    <button type="submit" class="button modal-close">
       <span class="visually-hidden">Закрыть</span>
     </button>
     <form class="form" action="https://echo.htmlacademy.ru" method="post">
       <div class="form-field">
-        <label for="name-id">Ваше имя: <input class="form-input" type="text" name="name" id="name-id"
-            placeholder="Имя Фамилия"></label>
-        <label for="email-id">Ваш e-mail: <input class="form-input" type="email" name="email"
-            id="email-id" placeholder="email@example.com"></label>
+        <div class="form-group">
+          <label for="name-id" class="form-label">Ваше имя:</label>
+          <input class="form-input" type="text" name="name" id="name-id" placeholder="Имя Фамилия">
+        </div>
+        <div class="form-group">
+          <label for="email-id" class="form-label">Ваш e-mail:</label>
+          <input class="form-input" type="email" name="email" id="email-id" placeholder="email@example.com">
+        </div>
       </div>
       <div class="form-textarea">
-        <label for="textarea-id">Текст письма:</label>
+        <label for="textarea-id" class="form-label">Текст письма:</label>
         <textarea class="form-input" name="textarea" id="textarea-id" placeholder="В свободной форме"></textarea>
       </div>
       <button type="submit" class="button button-primary modal-button">Отправить</button>

@@ -226,23 +226,28 @@
 
   <section class="modal">
     <h2 class="modal-description">Напишите нам</h2>
-    <button class="button modal-close">
+    <button type="submit" class="button modal-close">
       <span class="visually-hidden">Закрыть</span>
     </button>
     <form class="form" action="https://echo.htmlacademy.ru" method="post">
       <div class="form-field">
-        <label for="name-id">Ваше имя: <input class="form-input field-input-error" type="text" name="name" id="name-id"
-            placeholder="Имя Фамилия"></label>
-        <label for="email-id">Ваш e-mail: <input class="form-input field-input-error" type="email" name="email"
-            id="email-id" placeholder="email@example.com"></label>
+      <div class="form-group">
+        <label for="name-id" class="form-label">Ваше имя:</label>
+        <input class="form-input" type="text" name="name" id="name-id" placeholder="Имя Фамилия">
+      </div>
+      <div class="form-group">
+        <label for="email-id" class="form-label">Ваш e-mail:</label>
+        <input class="form-input" type="email" name="email" id="email-id" placeholder="email@example.com">
+      </div>
       </div>
       <div class="form-textarea">
-        <label for="textarea-id">Текст письма:</label>
-        <textarea class="form-input field-input-error" name="textarea" id="textarea-id" placeholder="В свободной форме"></textarea>
+        <label for="textarea-id" class="form-label">Текст письма:</label>
+        <textarea class="form-input" name="textarea" id="textarea-id" placeholder="В свободной форме"></textarea>
       </div>
       <button type="submit" class="button button-primary modal-button">Отправить</button>
     </form>
   </section>
 </body>
+
 
 </html>
