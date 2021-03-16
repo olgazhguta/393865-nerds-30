@@ -521,6 +521,7 @@ img {
   border-bottom: 2px solid var(--basic-extra-light);
   background-position: top, bottom;
   background-repeat: no-repeat;
+
 }
 
 .clients-list {
@@ -533,6 +534,7 @@ img {
   margin: 0;
   padding-top: 48px;
   padding-bottom: 36px;
+  padding-left: 2px;
 }
 
 .clients-link {
@@ -628,7 +630,7 @@ img {
   flex-wrap: wrap;
   align-items: center;
   padding-bottom: 68px;
-  padding-top: 66px;
+  padding-top: 68px;
 }
 
 .social-list {
