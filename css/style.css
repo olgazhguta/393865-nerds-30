@@ -124,6 +124,7 @@ img {
 }
 
 .main-navigation {
+  padding-top: 10px;
   font-size: 16px;
   line-height: 30px;
   font-weight: 500;
@@ -204,7 +205,7 @@ img {
 .feature-item {
   text-align: left;
   margin: 0;
-  padding-top: 78px;
+  padding-top: 72px;
   padding-bottom: 80px;
 }
 
@@ -294,9 +295,9 @@ img {
   line-height: 24px;
   display: grid;
   grid-template-columns: auto auto;
-  column-gap: 149px;
-  padding-top: 39px;
-  padding-bottom: 73px;
+  column-gap: 150px;
+  padding-top: 40px;
+  padding-bottom: 74px;
 }
 
 .about-lead {
@@ -321,7 +322,18 @@ img {
 }
 
 .about-item {
-  margin-bottom: 30px;
+  position: relative;
+  margin-bottom: 25px;
+  margin-left: 1px;
+}
+
+.about-item::before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  border-top: 2px solid var(--red-light);
+  vertical-align: middle;
+  margin-right: 11px;
 }
 
 .about-item:last-child {
@@ -330,7 +342,7 @@ img {
 
 .about-info {
   margin: 0;
-  margin-top: 34px;
+  margin-top: 36px;
   width: 651px;
 }
 
@@ -352,7 +364,7 @@ img {
 }
 
 .stats-img {
-  margin-bottom: 37px;
+  margin-bottom: 31px;
 }
 
 .accuracy-title {
@@ -363,7 +375,8 @@ img {
   font-weight: 700;
   text-align: left;
   margin: 0;
-  margin-bottom: 31px;
+  margin-bottom: 33px;
+  margin-left: 16px;
 }
 
 .stats-list {
@@ -379,7 +392,6 @@ img {
   line-height: 64px;
   font-weight: 700;
   color: var(--basic-black);
-  margin-bottom: 11px;
 }
 
 .sign {
@@ -393,6 +405,7 @@ img {
   font-size: 16px;
   line-height: 18px;
   margin: 0;
+  margin-top: 11px;
 }
 
 /* Button */
@@ -414,7 +427,7 @@ img {
 }
 
 .button-primary {
-  padding: 16px 20px;
+  padding: 17px 20px;
   background-color: var(--red-light);
 }
 
@@ -469,7 +482,7 @@ img {
 }
 
 .services-img {
-  padding-bottom: 25px;
+  padding-bottom: 18px;
 }
 
 .services-list {
@@ -503,7 +516,7 @@ img {
 /* clients */
 
 .clients {
-  margin-bottom: 80px;
+  margin-bottom: 78px;
   border-top: 2px solid var(--basic-extra-light);
   border-bottom: 2px solid var(--basic-extra-light);
   background-position: top, bottom;
@@ -518,8 +531,8 @@ img {
   align-content: center;
   padding: 0;
   margin: 0;
-  padding-top: 46px;
-  padding-bottom: 44px;
+  padding-top: 48px;
+  padding-bottom: 36px;
 }
 
 .clients-link {
@@ -573,7 +586,7 @@ img {
 .contacts-content {
   width: 319px;
   background-color: var(--basic-white);
-  padding: 49px 50px 47px;
+  padding: 44px 50px 47px;
 }
 
 .contacts-title {
@@ -584,17 +597,18 @@ img {
   color: var(--basic-black);
   margin: 0;
   margin-bottom: 22px;
+  margin-top: 7px;
 }
 
 .contacts-text {
   line-height: 18px;
   color: var(--basic-gray);
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 14px;
 }
 
 .contacts-link {
-  margin-bottom: 37px;
+  margin-bottom: 34px;
 
 }
 
@@ -614,7 +628,7 @@ img {
   flex-wrap: wrap;
   align-items: center;
   padding-bottom: 68px;
-  padding-top: 68px;
+  padding-top: 66px;
 }
 
 .social-list {
@@ -758,21 +772,8 @@ img {
   color: var(--red);
 }
 
-.field-input-error:hover::placeholder,
-.field-input-error:focus::placeholder {
-  color: var(--red);
-}
-
 input::placeholder {
   color: var(--basic-dark-gray-05);
-}
-
-input:hover::placeholder {
-  color: var(--basic-dark-gray-05);
-}
-
-input:focus::placeholder {
-  color: var(--basic-dark-gray);
 }
 
 input:active::placeholder {
@@ -793,6 +794,14 @@ input:active::placeholder {
   max-height: 118px;
   margin-bottom: 47px;
   outline: 0;
+}
+
+textarea::placeholder {
+  color: var(--basic-dark-gray-05);
+}
+
+textarea:active::placeholder {
+  color: var(--basic-black);
 }
 
 .form-field {
@@ -828,7 +837,7 @@ input:active::placeholder {
   line-height: 55px;
   font-weight: 500;
   color: var(--basic-black);
-  margin-top: 87px;
+  margin-top: 72px;
   margin-bottom: 108px;
   text-align: center;
 }
@@ -849,7 +858,7 @@ input:active::placeholder {
 }
 
 .filter-margin {
-  margin-bottom: 14px;
+  margin-bottom: 13px;
 }
 
 .filter-group {
@@ -934,8 +943,10 @@ input:active::placeholder {
 
 .price-controls input {
   width: 80px;
-  padding: 10px;
-  margin-left: 10px;
+  padding-top: 11px;
+  padding-left: 13px;
+  padding-bottom: 10px;
+  margin-left: 9px;
   text-align: center;
   color: var(--basic-dark);
   border: none;
@@ -945,7 +956,7 @@ input:active::placeholder {
 }
 
 .filter-grid {
-  margin-bottom: 43px;
+  margin-bottom: 30px;
 }
 
 .checkbox-list {
@@ -970,13 +981,13 @@ input:active::placeholder {
 }
 
 .checkbox-item {
-  margin-bottom: 17px;
+  margin-bottom: 16px;
 }
 
 .filter-checkbox {
   position: relative;
   display: block;
-  padding-left: 45px;
+  padding-left: 35px;
   cursor: pointer;
 }
 
@@ -1017,7 +1028,7 @@ input:active::placeholder {
 .filter-radio {
   position: relative;
   display: block;
-  padding-left: 45px;
+  padding-left: 36px;
   cursor: pointer;
 }
 
@@ -1055,7 +1066,7 @@ input:active::placeholder {
 }
 
 .filter-excellence {
-  margin-bottom: 48px;
+  margin-bottom: 32px;
 }
 
 .filter-name {
@@ -1085,7 +1096,7 @@ input:active::placeholder {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  padding-bottom: 48px;
+  padding-bottom: 49px;
 }
 
 .sort-min-max {
@@ -1168,8 +1179,8 @@ input:active::placeholder {
   grid-template-columns: 1fr 1fr;
   margin: 0;
   padding: 0;
-  padding-bottom: 55px;
-  grid-row-gap: 30px;
+  padding-bottom: 57px;
+  grid-row-gap: 34px;
   grid-column-gap: 42px;
 }
 
@@ -1215,7 +1226,7 @@ input:active::placeholder {
 
 .example-title {
   margin: 0;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 .example-title a {
@@ -1242,7 +1253,8 @@ input:active::placeholder {
   color: var(--basic-gray);
   margin: 0;
   padding: 0;
-  margin-bottom: 32px;
+  margin-bottom: 31px;
+  margin-right: 3px;
 }
 
 .example-cover {
@@ -1253,7 +1265,7 @@ input:active::placeholder {
 .example-item:focus-within .example-cover {
   position: absolute;
   display: block;
-  padding: 26px 26px 44px 26px;
+  padding: 26px 28px 44px 29px;
   width: 100%;
   text-align: center;
   bottom: 0;
@@ -1265,6 +1277,7 @@ input:active::placeholder {
 .example-button {
   line-height: 18px;
   min-width: 200px;
+  padding: 16px 72px 12px 72px;
 }
 
 .example-button:active {
