@@ -151,7 +151,7 @@ img {
 .site-navigation-item-active::after {
   content: "";
   position: absolute;
-  top: 45px;
+  top: 43px;
   left: 0;
   border-bottom: 2px solid var(--red-light);
   width: 100%;
@@ -323,8 +323,7 @@ img {
 
 .about-item {
   position: relative;
-  margin-bottom: 25px;
-  margin-left: 1px;
+  margin-bottom: 24px;
 }
 
 .about-item::before {
@@ -333,7 +332,7 @@ img {
   width: 25px;
   border-top: 2px solid var(--red-light);
   vertical-align: middle;
-  margin-right: 11px;
+  margin-right: 10px;
 }
 
 .about-item:last-child {
@@ -353,7 +352,7 @@ img {
   font-weight: 700;
   text-align: left;
   margin: 0;
-  margin-bottom: 23px;
+  margin-bottom: 24px;
 }
 
 /* stats */
@@ -375,7 +374,7 @@ img {
   font-weight: 700;
   text-align: left;
   margin: 0;
-  margin-bottom: 33px;
+  margin-bottom: 31px;
   margin-left: 16px;
 }
 
@@ -405,7 +404,7 @@ img {
   font-size: 16px;
   line-height: 18px;
   margin: 0;
-  margin-top: 11px;
+  margin-top: 12px;
 }
 
 /* Button */
@@ -478,7 +477,7 @@ img {
 /* services */
 .services {
   padding-top: 80px;
-  padding-bottom: 80px;
+  padding-bottom: 79px;
 }
 
 .services-img {
@@ -509,14 +508,14 @@ img {
 }
 
 .services-text {
-  margin-bottom: 32px;
+  margin-bottom: 30px;
   text-align: left;
 }
 
 /* clients */
 
 .clients {
-  margin-bottom: 78px;
+  margin-bottom: 77px;
   border-top: 2px solid var(--basic-extra-light);
   border-bottom: 2px solid var(--basic-extra-light);
   background-position: top, bottom;
@@ -1098,7 +1097,7 @@ textarea:active::placeholder {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  padding-bottom: 49px;
+  padding-bottom: 48px;
 }
 
 .sort-min-max {
@@ -1252,10 +1251,12 @@ textarea:active::placeholder {
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
+  max-height: 250px;
+  overflow-y: auto;
   color: var(--basic-gray);
   margin: 0;
   padding: 0;
-  margin-bottom: 31px;
+  margin-bottom: 32px;
   margin-right: 3px;
 }
 
@@ -1376,6 +1377,6 @@ textarea:active::placeholder {
 .page-catalog {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 55px;
-  padding-bottom: 60px;
+  padding-top: 54px;
+  padding-bottom: 57px;
 }
