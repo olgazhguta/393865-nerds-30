@@ -515,12 +515,11 @@ img {
 /* clients */
 
 .clients {
-  margin-bottom: 77px;
+  margin-bottom: 24px;
   border-top: 2px solid var(--basic-extra-light);
   border-bottom: 2px solid var(--basic-extra-light);
   background-position: top, bottom;
   background-repeat: no-repeat;
-
 }
 
 .clients-list {
@@ -577,14 +576,19 @@ img {
 /* Contacts */
 
 .contacts {
+  position: relative;
   padding: 54px 0;
   min-height: 416px;
-  background-image: url("../img/map.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+}
+
+.contacts iframe {
+  border: none;
+  max-width: 100%;
 }
 
 .contacts-content {
+  position: absolute;
+  top: 107px;
   width: 319px;
   background-color: var(--basic-white);
   padding: 44px 50px 47px;
@@ -629,7 +633,7 @@ img {
   flex-wrap: wrap;
   align-items: center;
   padding-bottom: 68px;
-  padding-top: 68px;
+  padding-top: 7px;
 }
 
 .social-list {
