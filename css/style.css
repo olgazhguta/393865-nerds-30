@@ -579,6 +579,7 @@ img {
   position: relative;
   padding: 54px 0;
   min-height: 416px;
+  text-align: center;
 }
 
 .contacts iframe {
@@ -591,7 +592,8 @@ img {
   top: 107px;
   width: 319px;
   background-color: var(--basic-white);
-  padding: 44px 50px 47px;
+  padding: 41px 50px 46px;
+  text-align: left;
 }
 
 .contacts-title {
@@ -601,15 +603,16 @@ img {
   font-weight: 700;
   color: var(--basic-black);
   margin: 0;
-  margin-bottom: 22px;
-  margin-top: 7px;
+  margin-bottom: 21px;
+  margin-top: 10px;
 }
 
 .contacts-text {
   line-height: 18px;
   color: var(--basic-gray);
   margin: 0;
-  margin-bottom: 14px;
+  margin-bottom: 15px;
+  text-align: left;
 }
 
 .contacts-link {
